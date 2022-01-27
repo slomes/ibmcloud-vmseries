@@ -5,9 +5,9 @@
 ##############################################################################
 # vnf_cos_image_url - Vendor provided VM-Series qcow2 Image COS url.
 ##############################################################################
-# variable "vnf_cos_image_url" {
-#  description = "The COS image object SQL URL for VM-Series qcow2 image."
-#}
+variable "vnf_cos_image_url" {
+  description = "The COS image object SQL URL for VM-Series qcow2 image."
+}
 ##############################################################################
 # image_name - The name of the Palo Alto VM-Series (PanOS) image . Valid values are "pa-vm-kvm-9-1-3-1"
 ##############################################################################
@@ -67,7 +67,7 @@ variable "region" {
 }
 
 #####################################################################################################
-# api_key - This is the ibm_cloud_api_key which should be used only while testing this code from CLI. 
+# api_key - This is the ibm_cloud_api_key which should be used only while testing this code from CLI.
 # It is not needed while testing from Schematics
 ######################################################################################################
 
